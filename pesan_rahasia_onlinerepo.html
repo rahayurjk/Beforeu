@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan Rahasia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #fefefe;
+        }
+        #pesan {
+            display: none;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+        input[type="password"] {
+            padding: 10px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Buka Pesan</h2>
+    <p>Masukkan kode pertama kali kita chat:</p>
+    <input type="password" id="kode" placeholder="Masukkan kode...">
+    <br>
+    <button onclick="bukaPesan()">Buka</button>
+    
+    <div id="pesan"></div>
+
+    <script>
+        function bukaPesan() {
+            var kode = document.getElementById("kode").value;
+            var pesanDiv = document.getElementById("pesan");
+
+            if (kode === "21022020") {
+                pesanDiv.style.display = "block";
+                pesanDiv.innerText = `I love u so much. I love u more and more than u know. Aku sayang bgt sama kamu berdasarkan semua hal yg aku create sendiri dikepalaku. Setelah kamu mutusin aku sampai skrg aku masih sayang bgt sama kamu ga ada satu haripun aku ga ingat kamu, ga nyebut nama kamu dihatiku, mungkin kamu ga ingat aku pernah bilang aku selalu nyebut nama kamu untuk berasa safe.
+Setahun lebih kita udahan tapi aku berasanya masih bareng sama kamu. Aku capek loh kayak gni trs aku juga udah nyoba berbagai cara biar lupa sama kamu mulai dari beli hp baru (tidak se urgent itu untuk aku ganti hp tp biar akunya sedikit lebih happy akhirnya ganti hp), nyibukin diri bikin handicraft, lari kalo kgn bgt sama kamu, sampe dikenalin temen sama cowok tapi tetep aja berasa masih bareng kamu. Bahkan sampe unfoll ig kamu, pernah delate contact kamu tanpa hapus chat kita, biar kalo kamu up story aku ga liat, biar kalo aku kgn kamu bisa liat history chat kita. 6 bln setelah putus teman”ku baru tau kalo aku single bayangkan butuh 6 bln buat aku sadar dan nerima klo aku udah ga bareng kamu *sampe skrg jg masih blm nerima.
+Dengan semua hal diatas mungkin kamu tau segimana aku nahan diri untuk ga hubungi kamu. sekian lama aku nahan diri dgn berbagai pertimbangan kemarin aku chat kamu dgn harapan mungkin bisa bareng lagi, bisa dicoba sekali lagi kalau tidakpun mungkin tantanya skrg blm siap tapi akan siap diwaktu yg dia tentuin sendiri. Tapi, dilihat dari 3 hari chatan kemarin aku nyimpulin kamu emang udah ga mau bareng lagi (didalam hatiku sampai skrg aku ngetik ini aku masih berharap bisa bareng sama kamu).
+Tidak sedikit aku minta kamu ke Allah. Secara sadar aku tau kamu tidak se into itu sama aku tapi diri kamu yg aku create di pikiranku terlalu sempurna sampe aku merasa kamu harus sama aku. Emang aku ga semenarik itu ya? Ga se worth it itu untuk dimiliki?
+Makasih ya, untuk semuanya selama ini. Hampir 5th kita kenal, ga ada setahun kita ketemu sisanya by phone tapi kamu sehebat itu buat aku se falling love ini sama kamu. Akan aku usahakan kembali untuk tidak berharap dan tidak mengingat kamu lagi dan akan ku tutup semua bentuk komunikasi ke kamu. Wish i luck ya.
+Hope u always healty and happy.
+Taqabbalallahu minna wa minkum, Minal Aidin Wal Faizin. Mohon maaf lahir dan batin
+Love u ta🤍`;
+            } else {
+                pesanDiv.style.display = "block";
+                pesanDiv.innerText = "Kode salah. Coba lagi ya.";
+            }
+        }
+    </script>
+</body>
+</html>
